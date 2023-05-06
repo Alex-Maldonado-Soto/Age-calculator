@@ -1,0 +1,125 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg: #f0f0f0;
+  --sure-color: #fff;
+  --secondary-color: hsl(259, 100%, 65%);
+  --tertiary-color: hsl(0, 100%, 67%);
+  --dark-color: #141414;
+  --gray-color: hsl(0, 1%, 44%);
+  --weight-thin: 400;
+  --weight-middle: 700;
+  --weight-bold: 800;
+}
+
+body {
+  font-size: 62.5%;
+  background-color: var(--main-bg);
+  font-family: "Poppins", sans-serif;
+}
+
+.calculator {
+        display: flex;
+        background-color: var(--sure-color);
+        width: 85%;
+        margin-inline: 30px;
+        margin-top: 20px;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-direction: column;
+        border-radius: 0% 0% 37% 0% / 0% 0% 29% 0%;
+}
+.calculator__inputs {
+  display: grid;
+  grid-gap: 22px;
+}
+
+.calculator__inputs--container {
+  display: flex;
+  margin: 20px;
+}
+
+.calculator__inputs--label {
+  display: grid;
+  color: var(--gray-color);
+  font-size: 32px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto auto;
+  grid-gap: 5px;
+  margin-left: 20px;
+}
+
+.calculator__inputs--label span {
+    font-size: 20px;
+    color: var(--tertiary-color);
+}
+
+.calculator__inputs--label label {
+  grid-row: 1;
+}
+
+.calculator__inputs--label input {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 32px;
+    width: 70%;
+    grid-row: 2;
+    border-style: double;
+}
+
+.calculator__inputs--label input:focus-visible {
+    outline-color: var(--secondary-color);
+
+}
+
+label {
+  grid-row: 1;
+}
+
+input {
+  grid-row: 2;
+}
+
+.calculator__inputs--button {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: 50px;
+  align-items: center;
+}
+
+.calculator__inputs--button button {
+  border: none;
+  background: var(--secondary-color);
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-bg);
+}
+
+.calculator__results {
+  padding-left: 78px;
+  list-style: none;
+  font-size: 10rem;
+  font-weight: var(--weight-bold);
+}
+
+
+.calculator__results li span{
+    color: var(--secondary-color);
+}   
+
+
+.incorrecto {
+    border-color: var(--tertiary-color);
+}

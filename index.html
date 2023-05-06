@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main class="calculator">
+      <form onsubmit="return sendMessage()" class="calculator__inputs">
+        <div class="calculator__inputs--container">
+          <div class="calculator__inputs--label">
+            <label for="day">DAY</label>
+            <input
+              type="number"
+              name="day"
+              id="day"
+              placeholder="DD"
+              class="calculator__inputs--day"
+            />
+            <span id="warnings--day"></span>
+          </div>
+          <div class="calculator__inputs--label">
+            <label for="month">MONTH</label>
+            <input
+              type="number"
+              name="month"
+              id="month"
+              placeholder="MM"
+              class="calculator__inputs--month"
+            />
+            <span id="warnings--month"></span>
+          </div>
+          <div class="calculator__inputs--label">
+            <label for="year">YEAR</label>
+            <input
+              type="number"
+              name="year"
+              id="year"
+              placeholder="YYYY"
+              class="calculator__inputs--year"
+            />
+            <span id="warnings--year"></span>
+          </div>
+          
+        </div>
+        <div class="calculator__inputs--button">
+          <div class="divider"></div>
+          <button type="submit" value="Enviar!">
+            <img src="assets/images/icon-arrow.svg" alt="" srcset="" />
+          </button>
+        </div>
+
+      </form>
+
+      <ul class="calculator__results">
+        <li><span id="years"></span> Years</li>
+        <li><span id="months"></span> months</li>
+        <li><span id="days"></span> days</li>
+      </ul>
+
+
+    <span></span>
+    <main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
